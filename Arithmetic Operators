@@ -1,4 +1,4 @@
-The provided code stub reads two integers from STDIN,  and . Add code to print three lines where:
+1. The provided code stub reads two integers from STDIN,  and . Add code to print three lines where:
     The first line contains the sum of the two numbers.
     The second line contains the difference of the two numbers (first - second).
     The third line contains the product of the two numbers.
@@ -10,5 +10,19 @@ The provided code stub reads two integers from STDIN,  and . Add code to print t
     print(a+b)
     print(a-b)
     print(a*b)
+  
+2. The included code stub will read an integer,n, from STDIN.
+Without using any string methods, try to print the following:
+1234....n
+Note that "...." represents the consecutive values in between.
+Example n = 5
+Print the string 12345
+Solution
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(n):
+        print(i+1,end="")
+
+
     
    

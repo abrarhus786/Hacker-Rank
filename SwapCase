@@ -1,0 +1,18 @@
+You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.
+Solution:
+def swap_case(s):
+    # sWAP cASE in Python - HackerRank Solution START
+    swapped = '';
+    for char in s:
+        if(char.isupper()==True):
+            swapped += (char.lower());
+        elif(char.islower()==True):
+            swapped += (char.upper());
+        else:
+           swapped += char;
+    return swapped;
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
